@@ -24,4 +24,4 @@ Rendered as:
 {[ default ]}{[ prefix = "" /]}
 {[/]}
 {[ let tokenName = variableName(prefix, context, tokenGroup) /]}
-{{ tokenName }}
+{{ "$" + tokenName }}

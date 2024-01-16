@@ -1,6 +1,6 @@
 {
-    "id": "io.supernova.neuron-exporter",
-    "name": "Neuron sass exporter from supernova",
+    "id": "io.supernova.neuron-exporter-copy",
+    "name": "Neuron exporter copy",
     "description": "Sass supernova exporter for neuron project.",
     "author": "Ais servis",
     "organization": "Ais servis",
