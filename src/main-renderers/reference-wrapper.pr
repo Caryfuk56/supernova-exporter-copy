@@ -15,5 +15,5 @@ Injectable blueprint with either uses token reference or rendered #body
 {[ if !context.referencedToken ]}
 {{ #body }}
 {[ else ]}
-${[ inject "rendered-name" context context.referencedToken /]}
+{[ inject "rendered-name" context context.referencedToken /]}
 {[/]}
