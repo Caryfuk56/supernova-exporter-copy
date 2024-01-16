@@ -1,0 +1,4 @@
+{* Generate all MEASURES tokens for the VIGO brand. *}
+{[ const persistentId = getBrandId(brandNames.vigo, ds.allBrands()) /]}
+{[ inject "file-header-comment" context { "brandName": brandNames.vigo, "persistentId": persistentId, "type": "colors" } /]}
+{[ inject "measures-renderer" context persistentId /]}

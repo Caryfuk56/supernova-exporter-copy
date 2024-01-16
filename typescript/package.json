@@ -1,0 +1,20 @@
+{
+  "name": "neuron-exporter-typescript",
+  "version": "1.0.0",
+  "description": "\"Typescript source for the neuron styles exporter from Supernova\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --mode=production --watch",
+    "dev": "npx webpack --mode=development --watch"
+  },
+  "author": "ais servis",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/json-schema": "^7.0.12",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

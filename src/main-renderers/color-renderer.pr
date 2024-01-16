@@ -1,0 +1,8 @@
+{* Generate tokens for COLORS. *}
+{[ const brandId = context /]}
+{[ const colorTokens = ds.tokensByType("Color", brandId) /]}
+{[ for token in colorTokens ]}
+{[ const tokenGroup = ds.tokenGroupContainingTokenId(token.id) /]}
+{[ inject "render-group-name" context tokenGroup /]}
+{[ inject "render-colors" context token /]}
+{[/]}

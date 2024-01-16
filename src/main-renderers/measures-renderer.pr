@@ -1,0 +1,7 @@
+{[ const brandId = context /]}
+{[ const measureTokens = ds.tokensByType("Measure", brandId) /]}
+{[ for token in measureTokens]}
+{[ const tokenGroup = ds.tokenGroupContainingTokenId(token.id) /]}
+{[ inject "render-group-name" context tokenGroup /]}
+ ${[ inject "rendered-name" context token /]}: {[ inject "render-measure-value" context token.value /]};
+{[/]}

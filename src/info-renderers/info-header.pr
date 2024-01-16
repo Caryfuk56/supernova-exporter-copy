@@ -1,0 +1,6 @@
+{* Render header of the all brands export info *}
+{{ "====================================" }}
+{{ "|     AIS - SUPERNOVA EXPORTER     |" }}
+{{ "| -------------------------------- |" }}
+{{ "| version: " }}{{ currentExporterVersion }}{{ "                   |" }}
+{{ "====================================" }}

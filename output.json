@@ -1,0 +1,32 @@
+{
+    "blueprints": [
+        {
+            "invoke": "cpp_colors.pr",
+            "write_to": "cpp/_colors.scss"
+        },
+        {
+            "invoke": "cpp_measures.pr",
+            "write_to": "cpp/_measures.scss"
+        },
+        {
+            "invoke": "koop_colors.pr",
+            "write_to": "koop/_colors.scss"
+        },
+        {
+            "invoke": "koop_measures.pr",
+            "write_to": "koop/_measures.scss"
+        },
+        {
+            "invoke": "vigo_colors.pr",
+            "write_to": "vigo/_colors.scss"
+        },
+        {
+            "invoke": "vigo_measures.pr",
+            "write_to": "vigo/_measures.scss"
+        },
+        {
+            "invoke": "allBrandsInfo.pr",
+            "write_to": "info/allBrandsInfo.txt"
+        }
+    ]
+}

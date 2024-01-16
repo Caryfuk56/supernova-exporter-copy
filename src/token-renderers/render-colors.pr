@@ -1,0 +1,3 @@
+{* Render color tokens in format: $<Variable name>: <HSL value>; *}
+{[ let token = context /]}
+${[ inject "rendered-name" context token /]}: {{ rgbToHsl(token.value) }};

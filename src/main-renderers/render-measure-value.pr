@@ -1,0 +1,27 @@
+{*
+Render css measure value. The measure number and unit converted to css units.
+If the property has referenced value render the reference.
+
+{
+  "context": {
+    "id": string
+    "name": string
+    "description": string
+    "tokenType": Depends on the token type
+    "origin": ItemOrigin | null
+    "value": Depends on the token type
+  }
+}
+*}
+{[ inject "reference-wrapper" context context ]}
+{[ let unit = "px" /]}
+{[ switch context.unit ]}
+{[ case "Points"]}
+{[ set unit = "pt"/]}
+{[ case "Percent"]}
+{[ set unit = "%" /]}
+{[ case "Ems"]}
+{[ set unit = "em"/]}
+{[/]}
+{{ context.measure }}{{ unit }}
+{[/]}

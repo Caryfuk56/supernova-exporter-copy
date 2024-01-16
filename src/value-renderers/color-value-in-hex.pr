@@ -1,0 +1,24 @@
+{*
+Render color value as hex code.
+
+{
+  "context": {
+    "hex": string
+    "r": number
+    "g": number
+    "b": number
+    "a": number
+    "referencedToken": ColorToken | null
+  }
+
+  Example:
+  #696969
+}
+
+*}
+{[ if (context.a && context.a < 255)]}
+#{{ context.hex }}
+{[ else ]}
+#{{ context.hex.substring(0, 6) }}
+{[/]}
+{[/]}

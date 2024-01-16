@@ -1,0 +1,18 @@
+{* Print text file with basic information about export settings. *}
+
+{[ const allBrands = ds.allBrands() /]}
+{[ const currentDate = dateNow() /]}
+{[ inject "info-header" context ds /]}
+
+{{ "* Vyexportováno: " + currentDate }}
+
+{{ "--------------------------------------------" }}
+
+{{ "DOSTUPNÉ TÉMATA (BRANDS)" }}
+
+{[ for brand in allBrands ]}
+{{ "* " + brand.name }}
+{{ "  - Persistant id: " + brand.persistentId + "\n" }}
+{[/]}
+
+{{ "--------------------------------------------" }}

@@ -1,0 +1,19 @@
+{*
+Injectable blueprint with either uses token reference or rendered #body
+
+{
+  "context": {
+    "id": string
+    "name": string
+    "description": string
+    "tokenType": Depends on the token type
+    "origin": ItemOrigin | null
+    "value": Depends on the token type
+  }
+}
+*}
+{[ if !context.referencedToken ]}
+{{ #body }}
+{[ else ]}
+${[ inject "rendered-name" context context.referencedToken /]}
+{[/]}

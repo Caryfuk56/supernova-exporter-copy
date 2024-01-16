@@ -1,0 +1,4 @@
+{* Generate all COLORS tokens for the KOOP brand *}
+{[ const persistentId = getBrandId(brandNames.koop, ds.allBrands()) /]}
+{[ inject "file-header-comment" context { "brandName": brandNames.koop, "persistentId": persistentId, "type": "colors" } /]}
+{[ inject "color-renderer" context persistentId /]}

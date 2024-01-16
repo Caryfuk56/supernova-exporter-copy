@@ -1,0 +1,21 @@
+{*
+Show comment before group of styles.
+
+{
+  "context": {
+    "id": string
+    "name": string
+    "description": string
+    "path": Array<string>
+    "subgroups": Array<TokenGroup>
+    "tokenType": TokenType
+    "isRoot": boolean
+    "childrenIds": Array<string>
+    "tokenIds": Array<string>
+    "parent": TokenGroup | null
+  }
+}
+*}
+{[ let comment = groupNameComment(context) /]}
+{[ if (comment) ]}{{comment}}
+{[/]}

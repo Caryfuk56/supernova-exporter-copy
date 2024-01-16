@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "build",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+  },
+  "include": ["supernova.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

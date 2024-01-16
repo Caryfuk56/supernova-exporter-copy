@@ -1,0 +1,27 @@
+{*
+Render sass property name. Use pascal case and use the prefix with token type.
+
+{
+  "context": {
+    "id": string
+    "name": string
+    "description": string
+    "tokenType": Depends on the token type, but we don't care about it here
+    "origin": ItemOrigin | null
+    "value": Depends on the token type, but we don't care about it here
+  }
+}
+
+Rendered as:
+[prefix]-[group1]-[group2]-[...]-[name]--[specification]
+
+*}
+{[ let tokenGroup = ds.tokenGroupContainingTokenId(context.id) /]}
+{[ let prefix = "" /]}
+{[ switch context.tokenType ]}
+{[ case "Color" ]}{[ prefix = categoryPrefixes.colorTokenPrefix /]}
+{[ case "Measure" ]}{[ prefix = categoryPrefixes.measureTokenPrefix /]}
+{[ default ]}{[ prefix = "" /]}
+{[/]}
+{[ let tokenName = variableName(prefix, context, tokenGroup) /]}
+{{ tokenName }}

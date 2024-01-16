@@ -1,0 +1,4 @@
+{* Generate all color tokens for the CPP brand *}
+{[ const persistentId = getBrandId(brandNames.cpp, ds.allBrands()) /]}
+{[ inject "file-header-comment" context { "brandName": brandNames.cpp, "persistentId": persistentId, "type": "colors" } /]}
+{[ inject "color-renderer" context persistentId /]}
