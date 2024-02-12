@@ -47,6 +47,8 @@ export const brandNames = {
   vigo: "01 - VIGo",
   cpp: "02 - CPP",
   koop: "03 - Koop",
+  knz: "04 - KNZ",
+  sus: "05 - SUS",
 };
 
 /**

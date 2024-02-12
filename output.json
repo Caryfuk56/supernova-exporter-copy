@@ -25,6 +25,22 @@
             "write_to": "vigo/_measures.scss"
         },
         {
+            "invoke": "knz_colors.pr",
+            "write_to": "knz/_colors.scss"
+        },
+        {
+            "invoke": "knz_measures.pr",
+            "write_to": "knz/_measures.scss"
+        },
+        {
+            "invoke": "sus_colors.pr",
+            "write_to": "sus/_colors.scss"
+        },
+        {
+            "invoke": "sus_measures.pr",
+            "write_to": "sus/_measures.scss"
+        },
+        {
             "invoke": "allBrandsInfo.pr",
             "write_to": "info/allBrandsInfo.txt"
         }
