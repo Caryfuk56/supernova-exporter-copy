@@ -503,7 +503,7 @@ exports["default"] = rgbToHsl;
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"id":"io.supernova.neuron-exporter-copy","name":"Neuron exporter copy","description":"Sass supernova exporter for neuron project.","author":"Ais servis","organization":"Ais servis","source_dir":"src","version":"1.0.5","usesBrands":true,"usesThemes":true,"config":{"sources":"sources.json","output":"output.json","js":"src/js/helpers.js"},"engines":{"pulsar":"1.0.0","supernova":"1.0.0"},"tags":["sass","neuron"]}');
+module.exports = JSON.parse('{"id":"io.supernova.neuron-exporter-copy","name":"Neuron exporter copy","description":"Sass supernova exporter for neuron project.","author":"Ais servis","organization":"Ais servis","source_dir":"src","version":"1.0.6","usesBrands":true,"usesThemes":true,"config":{"sources":"sources.json","output":"output.json","js":"src/js/helpers.js"},"engines":{"pulsar":"1.0.0","supernova":"1.0.0"},"tags":["sass","neuron"]}');
 
 /***/ })
 
